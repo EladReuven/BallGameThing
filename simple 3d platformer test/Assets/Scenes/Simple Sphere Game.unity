@@ -11346,6 +11346,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: a07105af0bc77a942ac71b139b8f4c4b, type: 3}
   m_PrefabInstance: {fileID: 1905026075}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &748409301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 748409303}
+  - component: {fileID: 748409302}
+  - component: {fileID: 748409304}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &748409302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748409301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf22152b7bf2ef45ae46a7bc3f13569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Patrick
+--- !u!4 &748409303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748409301}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &748409304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748409301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab063f958f39c44498e2493ad5d216b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objToSave: {fileID: 954261029}
 --- !u!1 &759123947
 GameObject:
   m_ObjectHideFlags: 0
@@ -16795,7 +16853,6 @@ GameObject:
   - component: {fileID: 954261036}
   - component: {fileID: 954261037}
   - component: {fileID: 954261038}
-  - component: {fileID: 954261039}
   m_Layer: 0
   m_Name: PlayerSphere
   m_TagString: Player
@@ -16962,20 +17019,6 @@ MonoBehaviour:
   instadConfetti:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &954261039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954261029}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c20efffd55b5ac74bb5a1fed2c76729a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 500
-  rb: {fileID: 0}
 --- !u!1 &1002162051
 GameObject:
   m_ObjectHideFlags: 0
