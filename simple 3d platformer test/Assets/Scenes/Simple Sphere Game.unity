@@ -16547,7 +16547,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 61.800003, y: -14.299988}
+  m_AnchoredPosition: {x: 61.80005, y: -14.299988}
   m_SizeDelta: {x: 120, y: 20.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &922858121
@@ -16872,9 +16872,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beaa559e9a9a6a446a27c5b97b3d6762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resetVelocity:
+    m_PersistentCalls:
+      m_Calls: []
   v3Force: {x: 0, y: 0, z: 10}
   positiveKey: 273
   negativeKey: 274
+  hardStop: {x: 0.05, y: 0.05, z: 0.05}
+  rb: {fileID: 0}
 --- !u!135 &954261031
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16980,9 +16985,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beaa559e9a9a6a446a27c5b97b3d6762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resetVelocity:
+    m_PersistentCalls:
+      m_Calls: []
   v3Force: {x: 10, y: 0, z: 0}
   positiveKey: 275
   negativeKey: 276
+  hardStop: {x: 0.05, y: 0.05, z: 0.05}
+  rb: {fileID: 0}
 --- !u!114 &954261037
 MonoBehaviour:
   m_ObjectHideFlags: 0

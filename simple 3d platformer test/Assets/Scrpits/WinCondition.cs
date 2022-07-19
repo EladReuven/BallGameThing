@@ -7,7 +7,7 @@ public class WinCondition : MonoBehaviour
 {
     
     public string finishTag;
-    private bool Win = false;
+    //private bool Win = false;
     public ParticleSystem confetti;
 
     public UnityEvent instadConfetti;
@@ -23,7 +23,7 @@ public class WinCondition : MonoBehaviour
         {
             gameObject.SetActive(false);
             instadConfetti.Invoke();
-            Win = true;
+            //Win = true;
         }
     }
 
