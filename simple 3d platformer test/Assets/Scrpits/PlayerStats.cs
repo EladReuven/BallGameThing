@@ -8,8 +8,8 @@ public class PlayerStats : MonoBehaviour
     public Text Lives;
     public Text Death;
     public Image[] heart;
-    private int CurrentHP;
     public int MaxHP;
+    public int CurrentHP { get; private set; }
     
     void Start()
     {

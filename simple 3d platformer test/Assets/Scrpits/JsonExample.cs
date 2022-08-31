@@ -17,12 +17,15 @@ public class JsonExample : MonoBehaviour
     [SerializeField]
     GameObject objToSave;
 
+    [SerializeField]
+    PlayerStats playerStats;
+
     void Start()
     {
         
         //creating data class instance
         PlayerData mPlayerData = new PlayerData();
-        mPlayerData.hp = 5;
+        mPlayerData.hp = playerStats.CurrentHP;
         mPlayerData.name = "notToday";
         mPlayerData.XP = 5000;
         mPlayerData.objBeingSaved = objToSave;
@@ -32,7 +35,7 @@ public class JsonExample : MonoBehaviour
 
 
         //write json to local file (using System.IO)
-        File.WriteAllText(@"C:\Tiltan\Unity\BallGameThing\simple 3d platformer test\json.txt", json);
+        //File.WriteAllText(@"C:\Tiltan\Unity\BallGameThing\simple 3d platformer test\json.txt", json);
         File.WriteAllText(Application.persistentDataPath + @"\jsonPersist.txt", json);
 
 
